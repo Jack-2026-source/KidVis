@@ -1,4 +1,3 @@
-
 # KidVis Evaluation
 
 This repository provides evaluation code for **KidVis**, a benchmark for assessing foundational visual primitives in multimodal large language models (MLLMs).
@@ -61,7 +60,18 @@ with:
 ```bash
 --lang en
 ```
-## 4. Output
+## 4. API Evaluation
+Evaluate with API Models
+```bash
+python run_eval_API.py \
+  --base_url --your base_url \
+  --api_key --your api key \
+  --model_name gpt-4o \
+  --data_dir ./KidVis \
+  --lang zh \
+  --output_dir results
+  ```
+## 5. Output
 
 The evaluation script will save:
 
