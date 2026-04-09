@@ -66,7 +66,7 @@ Evaluate with API Models
 python run_eval_API.py \
   --base_url --your base_url \
   --api_key --your api key \
-  --model_name gpt-4o \
+  --model_name --your model name \
   --data_dir ./KidVis \
   --lang zh \
   --output_dir results
