@@ -35,7 +35,11 @@ huggingface-cli download Qwen/Qwen3-VL-4B-Instruct --local-dir ./Qwen3-VL-4B-Ins
 
 ```
 ## 3. Run Evaluation
-3.1 Evaluate with the Hugging Face model name
+3.1 
+```bash
+pip install "transformers>=4.57.0" torch datasets accelerate tqdm pillow torchvision "qwen_vl_utils>=0.0.14"
+```
+3.2 Evaluate with the Hugging Face model name
 For Chinese prompts
 ```bash
 python run_eval_qwen3vl.py \  
@@ -43,7 +47,7 @@ python run_eval_qwen3vl.py \
 --data_dir /your/data/path/KidVis \  
 --lang zh
 ```
-3.2 Evaluate with a local model path
+3.3 Evaluate with a local model path
 For Chinese prompts:
 ```bash
 python run_eval_qwen3vl.py \  
@@ -51,7 +55,7 @@ python run_eval_qwen3vl.py \
 --data_dir /your/data/path/KidVis \  
 --lang zh
 ```
-3.3 Evaluate with English prompts
+3.4 Evaluate with English prompts
 If you want to run evaluation with English prompts, simply replace:
 ```bash
 --lang zh
