@@ -35,7 +35,7 @@ huggingface-cli download Qwen/Qwen3-VL-4B-Instruct --local-dir ./Qwen3-VL-4B-Ins
 
 ```
 ## 3. Run Evaluation
-3.1 
+3.1 For Qwen3-VL-4B-Instruct
 ```bash
 pip install "transformers>=4.57.0" torch datasets accelerate tqdm pillow torchvision "qwen_vl_utils>=0.0.14"
 ```
