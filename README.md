@@ -65,7 +65,7 @@ with:
 --lang en
 ```
 ## 4. API Evaluation
-Evaluate with API Models
+Evaluate with API Models, the temperature is 0.1.
 ```bash
 python run_eval_API.py \
   --base_url --your base_url \
